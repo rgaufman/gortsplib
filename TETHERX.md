@@ -1,5 +1,19 @@
 # TetherX camera-compatibility integration
 
+## Upstream sync, 7 November 2026
+
+PROVEN: merged upstream main `e4283d1721bc46f55a177bed164d7b59a51b635d`.
+The artificial GStreamer delay is now restricted to affected publisher versions
+before1.16.3. A new table regression covers legacy/fixed/current versions and
+missing, ambiguous and malformed headers.
+
+OBSERVED: full native Linux ARM64 `go test -race -p 1 -count=1 -timeout 8m ./...`
+passes on an isolated admitted CPU-only Spark job with Go1.27.2, including the
+root networking suite. The sealed source archive SHA256 is
+`a9fc3f0fed32153d4a3faa0d3f49d0398ddd90e196b5f8bba4b987db037e2ff7`.
+Results were retrieved before the workstation reboot; they do not need repeating
+for that reboot. No running camera service was changed.
+
 This branch retains normalized session jitter (`df6c90d8e37f`) and integrates:
 
 - [PR #1178](https://github.com/bluenviron/gortsplib/pull/1178), heads
