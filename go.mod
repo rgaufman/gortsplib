@@ -3,7 +3,7 @@ module github.com/bluenviron/gortsplib/v5
 go 1.26.0
 
 require (
-	github.com/bluenviron/mediacommon/v2 v2.9.7
+	github.com/bluenviron/mediacommon/v2 v2.9.8-0.20261113182808-7b74aa2cfae3
 	github.com/google/uuid v1.6.0
 	github.com/gorilla/websocket v1.5.3
 	github.com/pion/rtcp v1.2.20
@@ -12,12 +12,12 @@ require (
 	github.com/pion/srtp/v3 v3.1.3
 	github.com/stretchr/testify v1.12.1
 	golang.org/x/net v0.62.0
-	golang.org/x/sys v0.49.0
+	golang.org/x/sys v0.50.0
 )
 
 require (
 	github.com/asticode/go-astikit v0.30.0 // indirect
-	github.com/asticode/go-astits v1.16.0 // indirect
+	github.com/asticode/go-astits v1.17.0 // indirect
 	github.com/pion/logging v0.2.4 // indirect
 	github.com/pion/randutil v0.1.0 // indirect
 	github.com/pion/transport/v5 v5.1.1 // indirect
